@@ -1,0 +1,82 @@
+:root {
+  --mainBackgroundColor: #f5f8ff;
+  --buttonCOlor: #4e47ff;
+  --singinButtonTextColor: #8987a1;
+  --singupButtonTextColor: #ffffff;
+  --helloGoodbyeButton: #252432;
+}
+@font-face {
+  font-family: "raleway";
+  src: url("/assets/fonts/Raleway-Regular.ttf");
+}
+body {
+  background-color: var(--mainBackgroundColor);
+  font-family: "raleway";
+}
+header {
+  display: flex;
+  max-width: 1216px;
+  height: 48px;
+  align-items: center;
+  justify-content: space-between;
+  margin: 55px auto;
+}
+header .LoginContainer {
+  display: flex;
+  gap: 19px;
+}
+header .LoginContainer .singinButton {
+  all: unset;
+  color: var(--singinButtonTextColor);
+  cursor: pointer;
+  transition: 300ms;
+}
+header .LoginContainer .singinButton:hover {
+  color: #252432;
+}
+header .LoginContainer .singUPButton {
+  background-color: var(--buttonCOlor);
+  border: none;
+  width: 132px;
+  height: 48px;
+  border-radius: 10px;
+  color: var(--singupButtonTextColor);
+  cursor: pointer;
+  transition: 300ms;
+}
+header .LoginContainer .singUPButton:hover {
+  background-color: #4e47ff99;
+}
+/* headerEnd */
+main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 101px;
+}
+main p {
+  width: 764px;
+  height: 146px;
+  font-size: 74px;
+  text-align: center;
+  font-weight: bold;
+}
+.Hello-Goodbye-container {
+  display: flex;
+  gap: 200px;
+}
+main .Hello-Goodbye-container .hello-Goodbye {
+  width: 211px;
+  height: 60px;
+  border: none;
+  background-color: var(--helloGoodbyeButton);
+  color: var(--singupButtonTextColor);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 300ms;
+  margin-top: 65px;
+}
+main .Hello-Goodbye-container .hello-Goodbye:hover {
+  background-color: #25243290;
+}
+/* mainEnd */
